@@ -1,0 +1,14 @@
+{
+  "name": "node",
+  "script": "./bin/www.js",
+  "instances": "1",
+  "args": "['-p', '8000']",
+  "max_memory_restart": "200M",
+  "error_file": "/tmp/logs/nodejs/app.log",
+  "out_file": "/tmp/logs/nodejs/app.log",
+  "log_date_format": "YYYY-MM-DD HH:mm:ss",
+  "env": {
+    "NODE_ENV": "development",
+    "AWESOME_SERVICE_API_TOKEN": "xxx"
+  }
+}

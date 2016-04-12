@@ -1,0 +1,14 @@
+[
+  {
+    "name": "app",
+    "script": "/opt/oatos/component/nginx/html/node/service/server.js",
+    "instances": "1",
+    "args": "['-p', '3000']"
+  },
+  {
+    "name": "socket",
+    "script": "/opt/oatos/component/nginx/html/node/socket/server.js",
+    "instances": "1",
+    "args": "[ '-p', '3100']"
+  }
+]

@@ -1,0 +1,1 @@
+export joiMiddleware from './restify-joi-middleware'

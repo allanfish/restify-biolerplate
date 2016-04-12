@@ -1,0 +1,22 @@
+[
+  {
+    "name": "app",
+    "script": "D:/workspace/server/node/service/server.js",
+    "instances": "1",
+    "args": "['-p', '3000']",
+    "max_memory_restart": "200M",
+    "error_file": "D:/tmp/oatos_log/nodejs/app.log",
+    "out_file": "D:/tmp/oatos_log/nodejs/app.log",
+    "log_date_format": "YYYY-MM-DD HH:mm:ss"
+  },
+  {
+    "name": "socket",
+    "script": "D:/workspace/server/node/socket/server.js",
+    "instances": "1",
+    "args": "[ '-p', '3100']",
+    "max_memory_restart": "200M",
+    "error_file": "D:/tmp/oatos_log/nodejs/socket.log",
+    "out_file": "D:/tmp/oatos_log/nodejs/socket.log",
+    "log_date_format": "YYYY-MM-DD HH:mm:ss"
+  }
+]
